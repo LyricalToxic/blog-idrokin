@@ -63,5 +63,8 @@ show_shares = false
 index = true
 
 +++
-No content
+I am Igor Drokin, a programmer who loves coding in Python and Rust. 
+Here you can find some brilliant blog posts(maybe even essays), my social links and other stuff.  
+
+[Email](mailto:drokinii1017+blog@gmail.com) me if you have any questions or offers.
 

@@ -44,3 +44,5 @@ aliases = []
 show_shares = false
 show_copyright = true
 +++
+
+My resume will be here soon ...
