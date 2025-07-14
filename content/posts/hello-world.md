@@ -5,13 +5,13 @@ description = "About me and my blog"
 draft = false
 
 [taxonomies]
-tags = ["article"]
+tags = ["about"]
 
 
 [extra]
 show_copyright = true
-show_comments = true
-show_shares = true
+show_comments = false
+show_shares = false
 keywords = "igor,drokin,about"
 +++
 # Hello World

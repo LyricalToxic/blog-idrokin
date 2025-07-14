@@ -29,11 +29,11 @@ index_format = "elasticlunr_json"
 author = "Igor Drokin"
 description = "Igor Drokin's Blog"
 index_page="home"
-top_menu = ["home","projects","posts"]
-copyright_string = "Сreated by Igor Drokin in 2025 – %YEAR% for fun. Powered by [zola](https://getzola.org/) and [pico](https://github.com/kuznetsov17/pico)."
+top_menu = ["Home", "Resume", "Posts", "Projects"]
+copyright_string = "Сreated by Igor Drokin in 2025 – %YEAR%. Powered by [zola](https://getzola.org/) and [pico](https://github.com/kuznetsov17/pico)."
 nonce=""
 avatar_src = "images/avatar.png"
-logo_src = "images/logo.webp"
+logo_src = "images/id_logo.webp"
 
 [extra.giscus]
 data_repo="LyricalToxic/blog-idrokin"
