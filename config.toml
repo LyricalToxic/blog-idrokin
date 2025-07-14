@@ -33,7 +33,7 @@ index_page = "home"
 top_menu =[
     { name = "Home", path="home" },
     { name = "Resume", path="resume" },
-    { name = "Posts", path="post" },
+    { name = "Posts", path="posts" },
     { name = "Projects", path="projects" },
 ]
 
