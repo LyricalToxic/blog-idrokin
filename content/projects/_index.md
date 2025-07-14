@@ -8,7 +8,7 @@ template = "projects/projects.html"
 
 # If set, will be the path used by paginated page and the page number will be appended after it.
 # For example the default would be page/1
-paginate_path = "projects.html"
+paginate_path = "projects"
 
 # Whether to insert a link for each header like the ones you can see in this site if you hover one
 # The default template can be overridden by creating a `anchor-link.html` in the `templates` directory

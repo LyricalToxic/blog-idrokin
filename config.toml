@@ -13,7 +13,7 @@ build_search_index = true
 theme = "pico"
 
 taxonomies = [
-    {name = "tags"},
+    { name = "tags" },
 ]
 
 [markdown]
@@ -28,26 +28,33 @@ index_format = "elasticlunr_json"
 [extra]
 author = "Igor Drokin"
 description = "Igor Drokin's Blog"
-index_page="home"
-top_menu = ["Home", "Resume", "Posts", "Projects"]
+index_page = "home"
+#top_menu = ["Home", "Resume", "Posts", "Projects"]
+top_menu =[
+    { name = "Home", path="home" },
+    { name = "Resume", path="resume" },
+    { name = "Posts", path="post" },
+    { name = "Projects", path="projects" },
+]
+
 copyright_string = "Сreated by Igor Drokin in 2025 – %YEAR%. Powered by [zola](https://getzola.org/) and [pico](https://github.com/kuznetsov17/pico)."
-nonce=""
+nonce = ""
 avatar_src = "images/avatar.png"
 logo_src = "images/id_logo.webp"
 
 [extra.giscus]
-data_repo="LyricalToxic/blog-idrokin"
-data_repo_id="_"
-data_category="General"
-data_category_id="_"
-data_mapping="url"
-data_strict="0"
-data_reactions_enabled="0"
-data_emit_metadata="0"
-data_input_position="bottom"
-data_lang="en"
-crossorigin="anonymous"
-src="https://giscus.app/client.js"
+data_repo = "LyricalToxic/blog-idrokin"
+data_repo_id = "_"
+data_category = "General"
+data_category_id = "_"
+data_mapping = "url"
+data_strict = "0"
+data_reactions_enabled = "0"
+data_emit_metadata = "0"
+data_input_position = "bottom"
+data_lang = "en"
+crossorigin = "anonymous"
+src = "https://giscus.app/client.js"
 
 [extra.footer.icons]
 github = "https://github.com/LyricalToxic"
