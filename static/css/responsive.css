@@ -75,14 +75,14 @@
     #searchBox {
         position: absolute;
         top: 100%;
-        left: 0;
-        right: 0;
-        width: 100%;
+        left: 1rem;
+        right: 1rem;
+        width: calc(100% - 2rem);
         margin: 0.5rem 0 0 0;
-        padding: 0 1rem;
+        padding: 0;
         display: flex;
         align-items: center;
-        gap: 5px;
+        box-sizing: border-box;
     }
     
     #searchBox .icon {
@@ -147,6 +147,7 @@
     p {
         font-size: 0.9rem;
         line-height: 1.4;
+        text-align: justify;
     }
 }
 
@@ -207,6 +208,7 @@
 
 .resume-body p {
     margin: 0.5rem 0;
+    text-align: justify;
 }
 
 .resume-body ul {
