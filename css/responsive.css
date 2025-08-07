@@ -1,0 +1,454 @@
+/* Mobile-first responsive styles */
+
+/* Mobile Header Optimization */
+@media screen and (max-width: 768px) {
+    /* Full width header container */
+    #header-container {
+        padding: 0.8rem 0;
+        width: 100%;
+        margin: 0;
+    }
+    
+    #header-container .container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    #header-container .row {
+        margin: 0;
+    }
+    
+    #header-container .col-2 {
+        display: none;
+    }
+    
+    #header-container .col-8 {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    
+    #top {
+        padding: 1rem 0;
+        border-bottom-width: 1px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #menu {
+        flex: 1;
+    }
+    
+    #menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    #menu li {
+        flex: none;
+    }
+    
+    #top a:link, #top a:visited, #top a:active {
+        font-size: 1.3rem !important;
+        padding: 0.8rem 1rem !important;
+        line-height: 1.4 !important;
+        display: block;
+    }
+    
+    /* Keep theme icon visible */
+    #cIcon {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1rem;
+        flex-shrink: 0;
+    }
+    
+    /* Move search box below header on mobile */
+    #searchBox {
+        position: absolute;
+        top: 100%;
+        left: 1rem;
+        right: 1rem;
+        width: calc(100% - 2rem);
+        margin: 0.5rem 0 0 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    #searchBox .icon {
+        margin-right: 0.5rem;
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+    
+    #searchBox input {
+        flex: 1;
+        height: 2rem;
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+/* Extra small mobile screens */
+@media screen and (max-width: 480px) {
+    #header-container {
+        padding: 0.4rem 0;
+    }
+    
+    #top {
+        padding-bottom: 0.4rem;
+    }
+    
+    #top a:link, #top a:visited, #top a:active {
+        font-size: 1.1rem !important;
+        padding: 0.7rem 0.8rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+    
+    /* Smaller search box for very small screens */
+    #searchBox input {
+        height: 1.8rem;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+    }
+}
+
+/* General mobile font optimization */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    h2 {
+        font-size: 1.3rem !important;
+    }
+    
+    h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    p {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+    
+    h1 {
+        font-size: 1.4rem !important;
+    }
+    
+    h2 {
+        font-size: 1.2rem !important;
+    }
+    
+    h3 {
+        font-size: 1rem !important;
+    }
+    
+    p {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+}
+
+/* Base mobile styles */
+.resume-content {
+    padding: 1rem;
+}
+
+.resume-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.resume-body {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.resume-body h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.resume-body h2 {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 0.8rem 0;
+}
+
+.resume-body h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.resume-body p {
+    margin: 0.5rem 0;
+    text-align: justify;
+}
+
+.resume-body ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.resume-body li {
+    margin: 0.3rem 0;
+}
+
+/* Links styling for better mobile interaction */
+.resume-body a {
+    word-break: break-word;
+    display: inline-block;
+    padding: 0.2rem 0;
+}
+
+/* Progressive layout shrinking - first reduce margins, then content */
+
+/* Large desktop - maximum margins */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+    
+    .row .col-2 {
+        width: 12.6666666667%; /* col-2 equivalent */
+    }
+    
+    .row .col-8 {
+        width: 62.6666666667%; /* col-8 equivalent */
+    }
+}
+
+/* Medium desktop - reduce margins */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 85%;
+    }
+    
+    .row .col-2 {
+        width: 8.3333333333%; /* smaller margins */
+    }
+    
+    .row .col-8 {
+        width: 75%; /* wider content */
+    }
+}
+
+/* Small desktop/tablet - further reduce margins */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+    
+    .row .col-2 {
+        width: 4.1666666667%; /* minimal margins */
+    }
+    
+    .row .col-8 {
+        width: 83.3333333333%; /* almost full width */
+    }
+    
+    .resume-content {
+        padding: 1.5rem;
+    }
+    
+    .resume-title {
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    .resume-body {
+        font-size: 1rem;
+    }
+    
+    .resume-body h1 {
+        font-size: 1.7rem;
+    }
+    
+    .resume-body h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Standard desktop */
+@media screen and (min-width: 768px) {
+    .resume-content {
+        padding: 2rem;
+    }
+    
+    .resume-title {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+    
+    .resume-body {
+        font-size: 1rem;
+    }
+    
+    .resume-body h1 {
+        font-size: 1.8rem;
+    }
+    
+    .resume-body h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+    .resume-content {
+        padding: 3rem 2rem;
+    }
+    
+    .resume-title {
+        font-size: 2.5rem;
+    }
+    
+    .resume-body h1 {
+        font-size: 2rem;
+    }
+    
+    .resume-body h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Print styles for PDF generation */
+@media print {
+    .resume-content {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .resume-body a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+/* Additional mobile improvements */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    
+    .resume-content {
+        padding: 0.5rem;
+    }
+    
+    .resume-title {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .resume-body {
+        font-size: 0.85rem;
+    }
+    
+    .resume-body h1 {
+        font-size: 1.3rem;
+        margin: 1.2rem 0 0.8rem 0;
+    }
+    
+    .resume-body h2 {
+        font-size: 1.1rem;
+        margin: 1rem 0 0.6rem 0;
+    }
+    
+    .resume-body ul {
+        padding-left: 1rem;
+    }
+    
+    /* Better touch targets for links */
+    .resume-body a {
+        min-height: auto;
+        display: inline-block;
+        padding: 0.3rem 0;
+        line-height: 1.4;
+    }
+    
+    /* Mobile Footer Alignment */
+    footer.row {
+        margin: 0;
+    }
+    
+    footer .col-2 {
+        display: none;
+    }
+    
+    footer .col-8 {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    
+    #footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    /* Mobile Home Page Full Width */
+    #flexbox {
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #flexbox .col-2 {
+        display: none;
+    }
+    
+    #flexbox .col-5 {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+        order: 1;
+    }
+    
+    #flexbox .col-3 {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+        text-align: center;
+        order: 2;
+    }
+    
+    #index-image {
+        text-align: center;
+        margin: 2rem 0;
+    }
+}

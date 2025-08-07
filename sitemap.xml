@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.idrokin.com/</loc>
+    </url>
+    <url>
+        <loc>https://www.idrokin.com/posts/</loc>
+    </url>
+    <url>
+        <loc>https://www.idrokin.com/posts/hello-world/</loc>
+        <lastmod>2025-07-14</lastmod>
+    </url>
+    <url>
+        <loc>https://www.idrokin.com/posts/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.idrokin.com/projects/</loc>
+    </url>
+    <url>
+        <loc>https://www.idrokin.com/resume/</loc>
+    </url>
+    <url>
+        <loc>https://www.idrokin.com/tags/</loc>
+    </url>
+    <url>
+        <loc>https://www.idrokin.com/tags/about/</loc>
+    </url>
+</urlset>
