@@ -1,0 +1,281 @@
+/* Mobile-first responsive styles */
+
+/* Mobile Header Optimization */
+@media screen and (max-width: 768px) {
+    #header-container {
+        padding: 0.5rem 0;
+    }
+    
+    #top {
+        padding-bottom: 0.5rem;
+        border-bottom-width: 1px;
+    }
+    
+    #menu {
+        width: 100%;
+    }
+    
+    #menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.2rem;
+    }
+    
+    #menu li {
+        flex: none;
+    }
+    
+    #top a:link, #top a:visited, #top a:active {
+        font-size: 0.9rem !important;
+        padding: 0.4rem 0.6rem !important;
+        padding-bottom: 0.3rem !important;
+    }
+    
+    /* Search box optimization for mobile */
+    #searchBox {
+        float: none;
+        clear: both;
+        margin-top: 0.5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    #searchBox input {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    #cIcon {
+        float: none;
+        margin-top: 0.5rem;
+        clear: both;
+    }
+}
+
+/* Extra small mobile screens */
+@media screen and (max-width: 480px) {
+    #header-container {
+        padding: 0.3rem 0;
+    }
+    
+    #top {
+        padding-bottom: 0.3rem;
+    }
+    
+    #top a:link, #top a:visited, #top a:active {
+        font-size: 0.8rem !important;
+        padding: 0.3rem 0.4rem !important;
+        padding-bottom: 0.2rem !important;
+    }
+    
+    #searchBox {
+        margin-top: 0.3rem;
+    }
+    
+    #searchBox input {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
+        max-width: 150px;
+    }
+}
+
+/* General mobile font optimization */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    h2 {
+        font-size: 1.3rem !important;
+    }
+    
+    h3 {
+        font-size: 1.1rem !important;
+    }
+    
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+    
+    h1 {
+        font-size: 1.4rem !important;
+    }
+    
+    h2 {
+        font-size: 1.2rem !important;
+    }
+    
+    h3 {
+        font-size: 1rem !important;
+    }
+    
+    p {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+}
+
+/* Base mobile styles */
+.resume-content {
+    padding: 1rem;
+}
+
+.resume-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.resume-body {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.resume-body h1 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.resume-body h2 {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 0.8rem 0;
+}
+
+.resume-body h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.resume-body p {
+    margin: 0.5rem 0;
+}
+
+.resume-body ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.resume-body li {
+    margin: 0.3rem 0;
+}
+
+/* Links styling for better mobile interaction */
+.resume-body a {
+    word-break: break-word;
+    display: inline-block;
+    padding: 0.2rem 0;
+}
+
+/* Medium screens and up */
+@media screen and (min-width: 768px) {
+    .resume-content {
+        padding: 2rem;
+    }
+    
+    .resume-title {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+    
+    .resume-body {
+        font-size: 1rem;
+    }
+    
+    .resume-body h1 {
+        font-size: 1.8rem;
+    }
+    
+    .resume-body h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+    .resume-content {
+        padding: 3rem 2rem;
+    }
+    
+    .resume-title {
+        font-size: 2.5rem;
+    }
+    
+    .resume-body h1 {
+        font-size: 2rem;
+    }
+    
+    .resume-body h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Print styles for PDF generation */
+@media print {
+    .resume-content {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .resume-body a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+/* Additional mobile improvements */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    
+    .resume-content {
+        padding: 0.5rem;
+    }
+    
+    .resume-title {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .resume-body {
+        font-size: 0.85rem;
+    }
+    
+    .resume-body h1 {
+        font-size: 1.3rem;
+        margin: 1.2rem 0 0.8rem 0;
+    }
+    
+    .resume-body h2 {
+        font-size: 1.1rem;
+        margin: 1rem 0 0.6rem 0;
+    }
+    
+    .resume-body ul {
+        padding-left: 1rem;
+    }
+    
+    /* Better touch targets for links */
+    .resume-body a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+}

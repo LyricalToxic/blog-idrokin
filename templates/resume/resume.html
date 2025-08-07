@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="row content">
+<div class="row content resume-content">
     <div class="col-2"></div>
-    <div class="col-6">
-        <h1>Resume</h1>
-        <div>
+    <div class="col-8">
+        <h1 class="resume-title">Resume</h1>
+        <div class="resume-body">
             {{ section.content | safe }}
         </div>
     </div>
+    <div class="col-2"></div>
 </div>
 {% include "shares.html" %}
 {% include "comments.html" %}

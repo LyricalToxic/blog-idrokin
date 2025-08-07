@@ -45,7 +45,6 @@ show_shares = false
 show_copyright = true
 +++
 
-# Resume
 Welcome to Igor Drokin resume! Here you can find relevant information about my professional experience. 
 You can read it below or download it in [.pdf](/static/files/resume.pdf) format.
 
@@ -95,11 +94,11 @@ Designed and implemented high-scale data processing systems handling millions of
 - Led teams of 3-5 engineers
 - Developed boilerplate templates for data collection projects
 
-Company website: https://groupbwt.com/
+Company website: <a href="https://groupbwt.com/" target="_blank">https://groupbwt.com/</a>
 
 # Contact Information
 - Name: Igor Drokin
-- Email: drokinii1017@gmail.com
-- LinkedIn: https://www.linkedin.com/in/igor-drokin-822233227/
-- GitHub: https://github.com/IDrokin117
-- Personal Blog: https://www.idrokin.com 
+- Email: <a href="mailto:drokinii1017@gmail.com">drokinii1017@gmail.com</a>
+- LinkedIn: <a href="https://www.linkedin.com/in/igor-drokin-822233227/" target="_blank">https://www.linkedin.com/in/igor-drokin-822233227/</a>
+- GitHub: <a href="https://github.com/IDrokin117" target="_blank">https://github.com/IDrokin117</a>
+- Personal Blog: <a href="https://www.idrokin.com" target="_blank">https://www.idrokin.com</a> 
