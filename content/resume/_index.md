@@ -45,4 +45,61 @@ show_shares = false
 show_copyright = true
 +++
 
-My resume will be here soon ...
+# Resume
+Welcome to Igor Drokin resume! Here you can find relevant information about my professional experience. 
+You can read it below or download it in [.pdf](/static/files/resume.pdf) format.
+
+
+# Narrative
+Coming soon ...
+
+# Core Competencies
+- Build automated systems for data collection, transformation and aggregation
+- Mentoring and leading small teams
+- Contributed to static analysis tools and type checkers for Python (ruff, purefly)
+- Python mastery, Rust enjoyer
+
+## Tech Stack
+- Frameworks: Scrapy, Playwright/Puppeteer/Selenium, FastAPI/Litestar
+- Data & Analytics: Pandas, Jupyter Notebooks
+- Infrastructure: Docker, K8s
+- DevOps: ArgoCD, GitLab CI/CD, Prefect, Grafana, Metabase
+- Cloud: AWS
+- Databases: MySQL, PostgreSQL, MongoDB
+- Message Brokers: RabbitMQ, Redis, SQS
+
+## Programming Languages
+- Python: 6+ years experience (5+ years professional)
+- Rust: 1.5 years experience
+
+## Languages
+- Russian: Native
+- Ukrainian: Native
+- English: B2
+
+# Education
+- 2019-2024 Bachelor's Degree in Software Engineering
+  **National University "Zaporizhzhia Polytechnic"**
+
+# Professional Experience
+
+## GroupBWT
+**Team Lead | Project Lead | Data Scientist** (July 2020 - July 2025)  
+
+Designed and implemented high-scale data processing systems handling millions of records daily. Focused on  providing insights based on web data. Key responsibilities included:
+- Architecting scalable data processing solutions
+- Web scraping and data extraction
+- Building ETL pipelines
+- Browser automation tasks
+- API development
+- Led teams of 3-5 engineers
+- Developed boilerplate templates for data collection projects
+
+Company website: https://groupbwt.com/
+
+# Contact Information
+- Name: Igor Drokin
+- Email: drokinii1017@gmail.com
+- LinkedIn: https://www.linkedin.com/in/igor-drokin-822233227/
+- GitHub: https://github.com/IDrokin117
+- Personal Blog: https://www.idrokin.com 
