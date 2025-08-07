@@ -2,17 +2,42 @@
 
 /* Mobile Header Optimization */
 @media screen and (max-width: 768px) {
+    /* Full width header container */
     #header-container {
         padding: 0.8rem 0;
+        width: 100%;
+        margin: 0;
+    }
+    
+    #header-container .container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    #header-container .row {
+        margin: 0;
+    }
+    
+    #header-container .col-2 {
+        display: none;
+    }
+    
+    #header-container .col-8 {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
     }
     
     #top {
         padding-bottom: 0.8rem;
         border-bottom-width: 1px;
+        width: 100%;
+        position: relative;
     }
     
     #menu {
-        width: 100%;
+        width: calc(100% - 3rem);
+        float: left;
     }
     
     #menu ul {
@@ -20,6 +45,8 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         gap: 0.2rem;
+        margin: 0;
+        padding: 0;
     }
     
     #menu li {
@@ -32,28 +59,33 @@
         padding-bottom: 0.4rem !important;
     }
     
-    /* Search box optimization for mobile */
+    /* Keep theme icon visible */
+    #cIcon {
+        float: right;
+        margin-top: 0;
+        width: 2rem;
+    }
+    
+    /* Move search box below header on mobile */
     #searchBox {
-        float: none;
-        clear: both;
-        margin-top: 0.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         width: 100%;
-        display: flex;
-        align-items: center;
+        margin: 0.5rem 0 0 0;
+        padding: 0 1rem;
+        display: block;
+        box-sizing: border-box;
     }
     
     #searchBox input {
-        font-size: 0.8rem;
-        padding: 0.2rem 0.4rem;
-        width: 60%;
-        max-width: 120px;
-        height: 1.8rem;
-    }
-    
-    #cIcon {
-        float: none;
-        margin-top: 0.5rem;
-        clear: both;
+        width: 100%;
+        max-width: none;
+        height: 2rem;
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+        box-sizing: border-box;
     }
 }
 
@@ -73,16 +105,11 @@
         padding-bottom: 0.3rem !important;
     }
     
-    #searchBox {
-        margin-top: 0.3rem;
-    }
-    
+    /* Smaller search box for very small screens */
     #searchBox input {
-        font-size: 0.7rem;
-        padding: 0.15rem 0.3rem;
-        width: 50%;
-        max-width: 100px;
-        height: 1.5rem;
+        height: 1.8rem;
+        font-size: 0.8rem;
+        padding: 0.2rem 0.4rem;
     }
 }
 
