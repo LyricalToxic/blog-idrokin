@@ -227,7 +227,75 @@
     padding: 0.2rem 0;
 }
 
-/* Medium screens and up */
+/* Progressive layout shrinking - first reduce margins, then content */
+
+/* Large desktop - maximum margins */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+    
+    .row .col-2 {
+        width: 12.6666666667%; /* col-2 equivalent */
+    }
+    
+    .row .col-8 {
+        width: 62.6666666667%; /* col-8 equivalent */
+    }
+}
+
+/* Medium desktop - reduce margins */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 85%;
+    }
+    
+    .row .col-2 {
+        width: 8.3333333333%; /* smaller margins */
+    }
+    
+    .row .col-8 {
+        width: 75%; /* wider content */
+    }
+}
+
+/* Small desktop/tablet - further reduce margins */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+    
+    .row .col-2 {
+        width: 4.1666666667%; /* minimal margins */
+    }
+    
+    .row .col-8 {
+        width: 83.3333333333%; /* almost full width */
+    }
+    
+    .resume-content {
+        padding: 1.5rem;
+    }
+    
+    .resume-title {
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    .resume-body {
+        font-size: 1rem;
+    }
+    
+    .resume-body h1 {
+        font-size: 1.7rem;
+    }
+    
+    .resume-body h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Standard desktop */
 @media screen and (min-width: 768px) {
     .resume-content {
         padding: 2rem;
@@ -322,5 +390,61 @@
         display: inline-block;
         padding: 0.3rem 0;
         line-height: 1.4;
+    }
+    
+    /* Mobile Footer Alignment */
+    footer.row {
+        margin: 0;
+    }
+    
+    footer .col-2 {
+        display: none;
+    }
+    
+    footer .col-8 {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    
+    #footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    /* Mobile Home Page Full Width */
+    #flexbox {
+        margin: 0 !important;
+    }
+    
+    #flexbox .col-2 {
+        display: none;
+    }
+    
+    #flexbox .col-5 {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+    }
+    
+    #flexbox .col-3 {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    
+    #index-image {
+        text-align: center;
+        margin: 2rem 0;
     }
 }
