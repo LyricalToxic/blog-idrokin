@@ -45,7 +45,7 @@ show_shares = false
 show_copyright = true
 +++
 Welcome to Igor Drokin resume! Here you can find relevant information about my professional experience. 
-You can read it below or download it in [.pdf](/static/files/resume.pdf) format.
+You can read it below or download it in [.pdf](/files/resume.pdf) format.
 
 # Narrative
 Coming soon ...

@@ -145,7 +145,7 @@
     }
     
     p {
-        font-size: 0.9rem;
+        font-size: 1.125rem;
         line-height: 1.4;
         text-align: justify;
     }
@@ -187,7 +187,7 @@
 }
 
 .resume-body {
-    font-size: 0.9rem;
+    font-size: 1.125rem;
     line-height: 1.5;
 }
 
