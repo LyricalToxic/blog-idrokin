@@ -424,6 +424,8 @@
     /* Mobile Home Page Full Width */
     #flexbox {
         margin: 0 !important;
+        display: flex;
+        flex-direction: column;
     }
     
     #flexbox .col-2 {
@@ -434,6 +436,7 @@
         width: 100%;
         margin: 0;
         padding: 0 1rem;
+        order: 1;
     }
     
     #flexbox .col-3 {
@@ -441,6 +444,7 @@
         margin: 0;
         padding: 0 1rem;
         text-align: center;
+        order: 2;
     }
     
     #index-image {
